@@ -8,3 +8,4 @@ Topik: Klasifikasi (???) / Segmentasi (???) Penyakit Mata berdasarkan Pembuluh D
 
 Anggota: 
 - Ismail Bintang (3332190037)
+- Adam Ramdan (2030511074)
