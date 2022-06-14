@@ -147,12 +147,21 @@
    </div>
   </section>
   <section class="fine section" id="fine">
-   <h2>Fine Candi</h2>
+   <h2>Find Candi</h2>
+{% if nama is defined %}
    <div class="image">
     <div class="h-fine">
-     <img src="{{ url_for('static', filename='img/candi/steffen-b-28joUilHigc-unsplash.jpg') }}" alt="" />
+     <img src="{{ url_for('static', filename=gambar) }}" alt="" />
     </div>
    </div>
+
+{% else %}
+   <div class="image">
+    <div class="h-fine">
+     <img src="{{ url_for('static', filename='img/candi/hayo.jpg') }}" alt="" />
+    </div>
+   </div>
+{% endif %}
    <div class="fine-candi">
     <div class="serch">
      <form action="/" , method="post" enctype="multipart/form-data">
@@ -163,42 +172,46 @@
       </div>
      </form>
     </div>
+    {% if nama is defined %}
     <div class="text">
      <h3>Search Result</h3>
+
+
      <table class="form" style="width: 100%">
       <tr class="align-top">
        <td><b>Nama</b></td>
        <td style="width: 2%">:</td>
-       <td style="width: 82%">Candi Borobudur</td>
+       <td style="width: 82%">{{nama}}</td>
       </tr>
       <tr class="align-top">
        <td><b>Alamat</b></td>
        <td style="width: 1%">:</td>
-       <td>Jl. Badrawati, Kw. Candi Borobudur, Borobudur, Kec. Borobudur, Kabupaten Magelang, Jawa Tengah. Rute</td>
+       <td>{{alamat}}</td>
       </tr>
       <tr class="align-top">
        <td><b>Jam Buka</b></td>
        <td style="width: 1%">:</td>
-       <td>Setiap Hari, 06:30 - 16:30</td>
+       <td>{{jambuka}}</td>
       </tr>
       <tr class="align-top">
        <td><b>Rating</b></td>
        <td style="width: 1%">:</td>
        <td>
-        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i
-        ><i class="fas fa-star-half-alt"></i>
-        <span> /4.5</span>
+        <i class="fas fa-star"></i>
+        <span>{{rating}}</span>
        </td>
       </tr>
       <tr class="align-top">
        <td><b>Ulasan</b></td>
        <td style="width: 1%">:</td>
-       <td>As of May 2022 the structure is not accessible to climb but still amazing to walk around and enjoy.</td>
+       <td>{{ulasan}}</td>
       </tr>
      </table>
+
      <a href="">More Ulasan</a>
     </div>
    </div>
+    {% endif %}
    <div class="image"></div>
   </section>
   <section class="owner section" id="owner">
@@ -211,51 +224,22 @@
      <div class="swiper-slide d-flex justify-content-around">
       <div class="satu">
        <img src="{{ url_for('static', filename='img/user/slice1.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
+       <h4>Ismail Bintang</h4>
        <p class="title">Desain & Web Development</p>
       </div>
       <div class="satu">
        <img src="{{ url_for('static', filename='img/user/slice2.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
-       <p class="title">Desain & Web Development</p>
-      </div>
-      <div class="dua">
-       <img src="{{ url_for('static', filename='img/user/slice3.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
-       <p class="title">Desain & Web Development</p>
-      </div>
-     </div>
-     <div class="swiper-slide d-flex justify-content-around">
-      <div class="satu">
-       <img src="{{ url_for('static', filename='img/user/slice2.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
-       <p class="title">Desain & Web Development</p>
-      </div>
-      <div class="satu">
-       <img src="{{ url_for('static', filename='img/user/slice3.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
-       <p class="title">Desain & Web Development</p>
-      </div>
-      <div class="dua">
-       <img src="{{ url_for('static', filename='img/user/slice1.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
-       <p class="title">Desain & Web Development</p>
-      </div>
-     </div>
-     <div class="swiper-slide d-flex justify-content-around">
-      <div class="satu">
-       <img src="{{ url_for('static', filename='img/user/slice3.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
-       <p class="title">Desain & Web Development</p>
-      </div>
-      <div class="satu">
-       <img src="{{ url_for('static', filename='img/user/slice1.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
+       <h4>Nadya Yudho Miranti</h4>
        <p class="title">Desain & Web Development</p>
       </div>
       <div class="dua">
        <img src="{{ url_for('static', filename='img/user/slice2.png') }}" alt="" />
-       <h4>Adam Ramdan</h4>
+       <h4>Richy Puspita Dewi</h4>
+       <p class="title">Desain & Web Development</p>
+	  </div>
+	  <div class="satu">
+       <img src="{{ url_for('static', filename='img/user/slice3.png') }}" alt="" />
+       <h4>Sony Montela</h4>
        <p class="title">Desain & Web Development</p>
       </div>
      </div>
