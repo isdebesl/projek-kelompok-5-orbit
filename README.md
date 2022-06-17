@@ -3,7 +3,7 @@ Repository Projek Akhir Kelompok 5
 
 
 
-Topik: Pencarian Candi blom fix
+Topik: FINDCANDI: IDENTIFIKASI CANDI HINDU-BUDDHA DI INDONESIA MENGGUNAKAN FEATURE EXTRACTION DENGAN MODEL VGG-19
 
 
 Anggota: 
