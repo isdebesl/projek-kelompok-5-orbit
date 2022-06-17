@@ -8,6 +8,6 @@ Topik: Pencarian Candi blom fix
 
 Anggota: 
 - Ismail Bintang (3332190037)
-- Nadya Yudho Miranti (NIM)
+- Nadya Yudho Miranti (15118170)
 - Richy Puspita Dewi (19SA3044)
 - Sony Montela (1051927)
